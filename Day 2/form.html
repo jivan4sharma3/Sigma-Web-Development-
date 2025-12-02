@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in Html - sigma web development</title>
+  </head>
+
+  <body>
+    <form action="/submit" method="post">
+      <!-- Text input for username -->
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <br />
+      <!-- Password input -->
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <br />
+      <!-- Radio buttons for gender -->
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <br />
+      <!-- Textarea for comment  -->
+      <div>
+        <label for="comment">Enter your comment</label><br />
+        <textarea name="comment" rows="4" cols="50"></textarea>
+      </div>
+      <br />
+
+      <!-- select item  -->
+      <div>
+        <label for="fruits">Choose you fav Furits</label>
+        <select name="fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="cherry">Cherry</option>
+        </select>
+      </div>
+      <br />
+      <!-- Submit button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
