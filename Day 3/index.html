@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3 || Sigma Web Development</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <!-- inline and block element in html  -->
+    <div>
+      <p>Hey I am a para</p>
+      <a href="https://google.com">Google</a>
+      <div>I am a block element</div>
+      <span>I am span and I am inline</span>
+      <a href="">yes he is inline</a>
+    </div>
+    <br /><br />
+    <!-- Quick Quiz:
+    Without using br tag, write a vertically aligned form asking for name, city and pincode of a user.
+    Everyone must comment -->
+    <form action="/submit" method="post">
+      <!-- Text input for username -->
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <!-- Password input -->
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <!-- Radio buttons for gender -->
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <!-- Textarea for comment  -->
+      <div>
+        <label for="comment">Enter your comment</label><br />
+        <textarea name="comment" rows="4" cols="50"></textarea>
+      </div>
+
+      <!-- select item  -->
+      <div>
+        <label for="fruits">Choose you fav Furits</label>
+        <select name="fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="cherry">Cherry</option>
+        </select>
+      </div>
+      <!-- Submit button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
