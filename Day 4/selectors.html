@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors MasterClass | Sigma Web Development Course</title>
+  </head>
+  <style>
+    /* Element Selector  */
+    nav {
+      background-color: rgb(13, 13, 50);
+      color: white;
+    }
+    /* Class Selector  */
+    .conatiner {
+      background-color: red;
+      color: white;
+    }
+
+    /* Id Selector */
+    #form-container {
+      background-color: green;
+      color: white;
+    }
+
+    /* Child Selectors  */
+    div > h1 {
+      color: red;
+    }
+
+    /* Descendant Selector  */
+    div p {
+      color: blue;
+    }
+
+    /* Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+        /* Pseudo Selector  */
+        a:visited{
+            color: yellow
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+  </style>
+  <body>
+    <nav>
+      <div>
+        <h1 class="logo">MY Logo</h1>
+      </div>
+      <div id="list">
+        <ul>
+          <li><a href="google.com">Google</a></li>
+          <li><a href="facebook.com">Facebook</a></li>
+          <li><a href="instagrma.com">Instagrma</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="conatiner">
+      <div>
+        <h3>this is about me</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          ratione voluptates similique neque! Animi totam obcaecati dignissimos
+          consectetur quam minus natus magni, itaque rerum! Minima eius totam
+          eligendi vero, commodi dicta voluptate labore laboriosam perspiciatis
+          expedita deleniti dolores ad, atque voluptatum impedit, beatae facere!
+        </p>
+      </div>
+    </div>
+    <h3>Cotact me</h3>
+    <div id="form-container">
+      <h3>this is contact form</h3>
+      <form action="">
+        <div>
+          <input type="text" />
+        </div>
+        <div>
+          <input type="submit" value="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
