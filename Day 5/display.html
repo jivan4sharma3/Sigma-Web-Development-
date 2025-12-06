@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property | Sigma Web Development</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 30vh;
+      width: 80vw;
+      display: flex;
+      justify-content: space-around;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 23%;
+      border-radius: 10px;
+      font-size: 2rem;
+      box-shadow: 5px 5px 15px 5px #888888;
+      background-color: skyblue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">This is first box</div>
+      <div class="box">This is second box</div>
+      <div class="box">This is third box</div>
+      <div class="box">This is fourth box</div>
+    </div>
+  </body>
+</html>
