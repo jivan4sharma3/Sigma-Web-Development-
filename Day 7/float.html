@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float & Clear | Sigma Web Developmen</title>
+  </head>
+  <style>
+    .cards{
+        border: 2px solid black;
+        display: flow-root;
+        padding: 20px ;
+        margin: 30px;
+    }
+    .card{
+        border: 2px solid red;
+        font-size: 18px;
+    }
+    img{
+        float: right;
+    }
+    .card:nth-child(3){
+        background-color: aqua;
+        clear: right;
+
+    }
+  </style>
+  <body>
+    <div class="cards">
+      <img
+        src="https://www.shutterstock.com/shutterstock/photos/302739422/display_1500/stock-photo-man-fishing-at-lake-sitting-on-jetty-close-to-the-water-302739422.jpg"
+        alt=""
+        width="230px"
+      />
+      <div class="card">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic minus modi perspiciatis ipsam voluptatum adipisci optio aut, quaerat impedit nisi ad molestiae eos sunt, assumenda architecto debitis deleniti? Sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis officia vitae amet impedit, laudantium excepturi, debitis quaerat architecto expedita minima delectus? Maiores doloribus voluptate facilis vitae fugiat ea libero officiis quaerat accusamus dignissimos. Perfereque nostrum corrupti, repellendus,
+        </p>
+        
+      </div>
+      <div class="card">
+        <p>cupiditate autem. Sint amet autem distinctio tempore perferendis placeat veniam doloribus maiores, voluptatum consequuntur nemo? A modi optio ratione qui minus fugiat corrupti tempore laboriosam sunt, harum, nostrum deserunt reprehenderit amet aliquam esse quasi aperiam magni error maiores, obcaecati minima. Labore sint repellat eius similique dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo cupiditate quae iure, magni necessitatibus possimus nisi sed ad voluptas praesentium sunt dolorem totam, itaque nesciunt commodi. Facilis, totam rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint beatae dolorum illo maiores expedita, a voluptas aliquid distinctio officiis nesciunt tempore exercitationem harum ut. Iusto dignissimos quo doloremque maxime modi?
+        </p></div>
+      <div class="card">This is card 3  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias fuga deserunt deleniti reprehenderit error fugiat placeat provident reiciendis. Veniam velit veritatis minus quis optio fuga maxime minima vero, iure tenetur.</div>
+    </div>
+  </body>
+</html>
