@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations | Sigma Web Development</title>
+  </head>
+  <style>
+    .container {
+      background-color: skyblue;
+      height: 80vh;
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      width: 75px;
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: aqua;
+      animation-name: jivan, jagat;
+      animation-duration: 3s;
+      animation-iteration-count: 3;
+      animation-timing-function: ease-in-out;
+      animation-delay: 2s;
+      animation-direction: alternate-reverse;
+      /* animation-play-state: paused; */
+      /* animation: jivan 3s ease-out 1 infinite alternate-reverse; */
+    }
+    @keyframes jivan {
+      from {
+        background-color: red;
+      }
+      to {
+        background-color: yellow;
+        transform: translateX(500px);
+      }
+    }
+
+    @keyframes jagat {
+      0% {
+        transform: rotate(50deg);
+      }
+      15% {
+        transform: rotate(100deg);
+      }
+      30% {
+        transform: rotate(150deg);
+      }
+      60% {
+        transform: rotate(200deg);
+      }
+      80%{
+        transform:rotate(250deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">box</div>
+    </div>
+  </body>
+</html>
