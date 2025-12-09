@@ -22,7 +22,7 @@
       align-items: center;
       border-radius: 50%;
       background-color: aqua;
-      animation-name: jivan, jagat;
+      animation-name:jagat;
       animation-duration: 3s;
       animation-iteration-count: 3;
       animation-timing-function: ease-in-out;
@@ -31,7 +31,7 @@
       /* animation-play-state: paused; */
       /* animation: jivan 3s ease-out 1 infinite alternate-reverse; */
     }
-    @keyframes jivan {
+    /* @keyframes jivan {
       from {
         background-color: red;
       }
@@ -39,26 +39,32 @@
         background-color: yellow;
         transform: translateX(500px);
       }
-    }
+    } */
 
     @keyframes jagat {
       0% {
         transform: rotate(50deg);
+        background-color: red;
       }
       15% {
         transform: rotate(100deg);
+        background-color: green;
       }
       30% {
         transform: rotate(150deg);
+        background-color: yellow;
       }
       60% {
         transform: rotate(200deg);
+        background-color: blue;
       }
       80%{
         transform:rotate(250deg);
+        background-color: orange;
       }
       100% {
         transform: rotate(360deg);
+        background-color: purple;
       }
     }
   </style>
