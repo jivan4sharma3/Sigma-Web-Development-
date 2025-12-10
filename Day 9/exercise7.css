@@ -26,13 +26,28 @@
  }
 
  .container {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-
+     margin: auto;
+     margin-top: 200px;
+     height: 80vh;
+     width: 100vw;
+     max-width: 80vw;
+     display: flex;
+     justify-content: center;
+     justify-content: space-evenly;
  }
 
  .box-container {
-     height: 20vh;
-     width: 30vw;
-     box-shadow: 2px 2px 8px 2px #888888;
+     height: 25vh;
+     width: 25vw;
+     background-color: #f2f0ec;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     font-family: Inter,Helvetica,Arial,Lucida,sans-serif;
+ }
+
+ .top{
+    color: #999999;
  }
