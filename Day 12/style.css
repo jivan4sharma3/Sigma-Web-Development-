@@ -1,43 +1,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-/* bg img and home secion css  */
-.home-section {
-    height: 80vh;
-    width: 100vw;
-    background-color: #999999;
-    /* background: url("./img/background.png"); */
-    background-image: url(./img/background.png);
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
     background-color: black;
-    /* position: absolute; */
-    opacity: 1;
-    filter: brightness(50%);
-    /* backdrop-filter: invert(30%) , brightness(40%); */
-    z-index: .5;
 }
+
+/* ================= HOME SECTION ================= */
+
+.home-section {
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
+    background-image: url("./img/background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dark overlay */
+.home-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* ================= HEADER ================= */
 
 .head-container {
     width: 90%;
     margin: auto;
+    /* padding-bottom: -50px; */
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 0px;
-
-
+    z-index: 1;
 }
 
 .head-container img {
-    height: 20vh;
-    filter: brightness(100%);
+    height: 150px;
     cursor: pointer;
-    z-index: 1;
-
 }
 
 .head-container button {
@@ -52,85 +60,240 @@
     cursor: pointer;
 }
 
+/* ================= CENTER CONTENT ================= */
+
 .centre-container {
+    width: 60%;
     margin: auto;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 50%;
-    padding-top: 80px;
-}
-
-.top-text {
     text-align: center;
-    color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .top-text h1 {
-    font-size: 60px;
+    font-size: 56px;
     font-weight: 700;
     color: white;
-    margin: 0px 0px 16px;
-
+    margin-bottom: 16px;
 }
 
 .top-text h3 {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
-    margin: 0px 0px 16px;
+    margin-bottom: 16px;
 }
 
 .top-text p {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
-    margin: 0px 0px 16px;
+    margin-bottom: 20px;
+}
+
+/* ================= EMAIL CTA ================= */
+
+.buttom-btn {
+    display: flex;
+    gap: 8px;
 }
 
 .buttom-btn input {
-    flex: 1;
     height: 56px;
-    width: 366px;
+    width: 360px;
     padding: 0 16px;
     font-size: 16px;
-    color: #fff;
+    color: white;
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px 0 0 4px;
-    outline: none;
     border-radius: 5px;
+    outline: none;
 }
 
 .buttom-btn input::placeholder {
     color: #b3b3b3;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .buttom-btn button {
     height: 56px;
-    width: 216px;
-    padding: 0 26px;
+    width: 220px;
     font-size: 18px;
     font-weight: 600;
-    color: #fff;
+    color: white;
     background: red;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 5px;
     cursor: pointer;
     transition: background 0.2s ease;
-    border-radius: 5px;
 }
 
 .buttom-btn button:hover {
     background: #b02027;
+}
+
+/* ================= SECOND SECTION ================= */
+
+.second-container {
+    height: 2px;
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 100%),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 84%);
+}
+
+/* ================= Trending SECTION ================= */
+.movie-container {
+    height: 50vh;
+    color: white;
+}
+
+.movie-container h2 {
+    padding: 22px;
+    padding-left: 35px;
+}
+
+.movies-cards {
+    height: 300px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.movie-card {
+    height: 100%;
+    width: 17%;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+
+.movie-card span {
+    position: absolute;
+    bottom: 40px;
+    left: -30px;
+    font-size: 100px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    text-stroke: 3px white;
+    line-height: 1;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.movies-cards .img1 {
+    background-image: url("./img/strangerthings.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.movies-cards .img2 {
+    background-image: url("./img/knives\ out.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
 
 }
 
-.second-container{
-    height: 30vh;
-    /* width: 100vw; */
-    background-color: red;
-    position: relative;
+.movies-cards .img3 {
+    background-image: url("./img/singlepapa.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+
+}
+
+.movies-cards .img4 {
+    background-image: url("./img/jollyllb.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+
+}
+
+.movies-cards .img5 {
+    background-image: url("./img/kaantha.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+/* ================= More Reasons to Join SECTION ================= */
+
+.features-section {
+  background-color: black;
+  padding: 80px 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+} 
+
+/* Feature card */
+.feature-card {
+  background: linear-gradient(
+    135deg,
+    #1c0e20,
+    #0f0f0f
+  );
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Icon container */
+.feature-card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  padding: 20px;
+  filter: drop-shadow(16px 16px 14px rgb(191, 0, 255));
+
+}
+
+/* SVG size */
+.feature-card .icon svg {
+  width: 72px;
+  height: 72px;
+}
+
+/* Title */
+.feature-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 50px;
+
+}
+
+/* Description */
+.feature-card p {
+  font-size: 16px;
+  color: #b3b3b3;
+  line-height: 1.5;
+  margin-bottom: 50px;
 }
