@@ -24,7 +24,7 @@ body {
     backdrop-filter: blur(4px);
     border-radius: 16px;
     position: relative;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .login-box::before {
@@ -62,6 +62,10 @@ body {
     outline: none;
 }
 
+.input-box input::placeholder {
+    color: #3c3c3c;
+}
+
 .input-box label {
     position: absolute;
     top: 50%;
@@ -72,8 +76,8 @@ body {
     transition: 0.3s;
 }
 
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
+.input-box input:focus~label,
+.input-box input:valid~label {
     top: -5px;
     font-size: 12px;
     color: #00eaff;
