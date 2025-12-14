@@ -235,65 +235,110 @@ body {
 
 /* ================= More Reasons to Join SECTION ================= */
 
+.feature-head {
+    padding-left: 35px;
+    color: white;
+    margin-top: 20px;
+
+}
+
 .features-section {
-  background-color: black;
-  padding: 80px 5%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-} 
+    background-color: black;
+    padding: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
 
 /* Feature card */
 .feature-card {
-  background: linear-gradient(
-    135deg,
-    #1c0e20,
-    #0f0f0f
-  );
-  border-radius: 20px;
-  padding: 40px 30px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease;
+    background: linear-gradient(135deg,
+            #1c0e20,
+            #0f0f0f);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-6px);
+    transform: translateY(-6px);
 }
 
 /* Icon container */
 .feature-card .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 10px;
-  right:10px;
-  padding: 20px;
-  filter: drop-shadow(16px 16px 14px rgb(191, 0, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    filter: drop-shadow(16px 16px 14px rgb(191, 0, 255));
 
 }
 
 /* SVG size */
 .feature-card .icon svg {
-  width: 72px;
-  height: 72px;
+    width: 72px;
+    height: 72px;
 }
 
 /* Title */
 .feature-card h2 {
-  font-size: 24px;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 50px;
 
 }
 
 /* Description */
 .feature-card p {
-  font-size: 16px;
-  color: #b3b3b3;
-  line-height: 1.5;
-  margin-bottom: 50px;
+    font-size: 16px;
+    color: #b3b3b3;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+/* ================= Frequently Asked Questions SECTION ================= */
+
+.favqes-container {
+    background-color: black;
+    width: 94vw;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px; 
+}
+
+.favqes-container h2 {
+    color: white;
+
+}
+
+.ques-container {
+    height: 85px;
+    width: 80vw;
+    margin: auto;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; 
+     
+    background-color: #2D2D2D;
+    transition: .5s ease-in-out;
+}
+.ques-container p{
+ color: #ffff;
+    font-size: 24px;
+}
+.ques-container:hover{
+    background-color: #414141;
+    cursor: pointer;
 }
