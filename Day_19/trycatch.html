@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error handling in javascript || Sigam web development</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("Enter a number: ");
+      let b = prompt("Enter another number: ");
+      if (isNaN(a) || isNaN(b)) {
+        throw SyntaxError("Invalid input: Please enter numeric values only.");
+      }
+      let sum = parseInt(a) + parseInt(b);
+
+      function main() {
+        try {
+          console.log("The sum is ", sum);
+          return true;
+        } catch (error) {
+          console.log("An error occurred: ", error.message);
+          return false;
+        } finally {
+          console.log("Execution completed.");
+        }
+      }
+      let c = main();
+      console.log(c);
+    </script>
+  </body>
+</html>
