@@ -313,7 +313,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px; 
+    gap: 8px;
 }
 
 .favqes-container h2 {
@@ -329,16 +329,150 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between; 
-     
+    justify-content: space-between;
+
     background-color: #2D2D2D;
     transition: .5s ease-in-out;
 }
-.ques-container p{
- color: #ffff;
+
+.ques-container p {
+    color: #ffff;
     font-size: 24px;
 }
-.ques-container:hover{
+
+.ques-container:hover {
     background-color: #414141;
     cursor: pointer;
+}
+
+/* ================= MemberShip  SECTION ================= */
+
+.memebership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    padding: 20px;
+}
+
+.memebership .input-box {
+    display: flex;
+    gap: 8px;
+}
+
+.input-box input {
+    height: 56px;
+    width: 560px;
+    padding: 0 16px;
+    font-size: 16px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: #b3b3b3;
+    font-size: 16px;
+}
+
+.input-box button {
+    height: 56px;
+    width: 220px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.input-box button:hover {
+    background: #b02027;
+}
+
+
+/* ================= MemberShip  SECTION ================= */
+.top-footer {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+.top-footer a {
+    color: #ffffffb3;
+    font-size: 18px;
+}
+
+.footer-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-items .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer-item a {
+    color: #ffffffb3;
+    font-size: 17px;
+}
+
+.footer-bottom{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+
+}
+
+.footer-bottom p{
+    color: #ffffff80;
+}
+
+.footer-bottom a{
+    color: #448EF4;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 130px;
+}
+
+.lang-btn:hover {
+    background-color: #111;
+}
+
+.lang-btn .icon {
+    font-size: 14px;
+}
+
+.lang-btn .arrow {
+    font-size: 12px;
 }
