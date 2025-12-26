@@ -8,10 +8,16 @@
 // console.log(b)
 
 
+
+// import valuesof from './mymodule.js'
 const { createServer } = require('node:http');
+// const fs = require('fs')
 
 const hostname = '127.0.0.1';
 const port = 3000;
+const a = require('./mymodule.js')
+
+console.log(a)
 
 const server = createServer((req, res) => {
   res.statusCode = 200;
@@ -22,4 +28,4 @@ const server = createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
- 
+
