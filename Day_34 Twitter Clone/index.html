@@ -12,6 +12,7 @@
   </head>
   <body class="bg-black text-white">
     <div class="flex container mx-auto">
+      <!--First Section-->
       <div class="first w-[71%]">
         <div class="logo invert my-4">
           <svg
@@ -49,51 +50,86 @@
             <li
               class="flex justify-start items-center gap-3 w-fit px-5 py-2 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full"
             >
-              <span class="material-symbols-outlined"> home </span>
+              <span class="material-symbols-outlined">
+                mark_unread_chat_alt
+              </span>
               Grok
             </li>
             <li
               class="flex justify-start items-center gap-3 w-fit px-5 py-2 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full"
             >
-              <span class="material-symbols-outlined"> home </span>
+              <span class="material-symbols-outlined"> list </span>
               Lists
             </li>
             <li
               class="flex justify-start items-center gap-3 w-fit px-5 py-2 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full"
             >
-              <span class="material-symbols-outlined"> home </span>
+              <span class="material-symbols-outlined"> bookmarks </span>
               Bookmarks
             </li>
             <li
               class="flex justify-start items-center gap-3 w-fit px-5 py-2 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full"
             >
-              <span class="material-symbols-outlined"> home </span>
+              <span class="material-symbols-outlined"> communities </span>
               Communities
             </li>
             <li
               class="flex justify-start items-center gap-3 w-fit px-5 py-2 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full"
             >
-              <span class="material-symbols-outlined"> home </span>
+              <span class="material-symbols-outlined"> developer_guide </span>
               Premium
             </li>
             <li
               class="flex justify-start items-center gap-3 w-fit px-5 py-2 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full"
             >
-              <span class="material-symbols-outlined"> home </span>
+              <span class="material-symbols-outlined"> account_circle </span>
               Profile
             </li>
             <li
               class="flex justify-start items-center gap-3 w-fit px-5 py-2 hover:cursor-pointer hover:bg-gray-900 hover:rounded-full"
             >
-              <span class="material-symbols-outlined"> home </span>
+              <span class="material-symbols-outlined"> more </span>
               More
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- Second section  -->
       <div class="second w-full border-[1px] border-x-white border-y-black">
-        2
+        <!-- top div for you and following div  -->
+        <div class="top flex p-3 relative">
+          <div
+            class="absolute w-16 h-1 rounded-full z-10 bg-blue-500 bottom-0 left-[18%]"
+          ></div>
+          <div
+            class="left bg-red-400 w-1/2 flex justify-center font-bold text-lg"
+          >
+            For you
+          </div>
+          <div
+            class="right bg-green-300 w-1/2 flex justify-center text-lg font-bold"
+          >
+            Following
+          </div>
+          <div class="setting mx-2">
+            <span class="material-symbols-outlined"> settings </span>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-gray-700"></div>
+
+        <!--what happeing input and img setion -->
+        <div class="whatishapp flex gap-4">
+          <div class="img">
+            <img src="" alt="" />
+          </div>
+ 
+          <input type="text" class="w-full bg-black text-white" placeholder="What is happening ?! ">
+
+        </div>
       </div>
+
+      <!-- Second section  -->
       <div class="third w-full">
         <div class="search m-3">
           <input
@@ -102,28 +138,39 @@
             placeholder="Search"
           />
         </div>
+        <!-- whats Happening section  -->
         <div class="whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
           <h1 class="text-xl font-bold px-3">Whats Happening</h1>
+
           <div class="item p-4 hover:bg-gray-800 cursor-pointer">
             <div class="text-sm text-gray-200">Trending in Nepal</div>
             <div class="font-bold">#Orry</div>
             <div class="text-sm text-gray-200">40.2k post</div>
           </div>
-           <div class="item p-4 hover:bg-gray-800 cursor-pointer">
+
+          <div class="item p-4 hover:bg-gray-800 cursor-pointer">
             <div class="text-sm text-gray-200">Trending in Nepal</div>
             <div class="font-bold">#Orry</div>
             <div class="text-sm text-gray-200">40.2k post</div>
           </div>
-           <div class="item p-4 hover:bg-gray-800 cursor-pointer">
+
+          <div class="item p-4 hover:bg-gray-800 cursor-pointer">
             <div class="text-sm text-gray-200">Trending in Nepal</div>
             <div class="font-bold">#Orry</div>
             <div class="text-sm text-gray-200">40.2k post</div>
           </div>
-           <div class="item p-4 hover:bg-gray-800 cursor-pointer">
-            <div class="text-sm text-gray-200">Trending in Nepal</div>
-            <div class="font-bold">#Orry</div>
-            <div class="text-sm text-gray-200">40.2k post</div>
-          </div> 
+        </div>
+
+        <!-- who to follow  section  -->
+        <div class="whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+          <h1 class="text-xl font-bold px-3">Who To Folow</h1>
+
+          <div class="item p-4">
+            <div class="font-bold cursor-pointer my-2">Jivan Sharma</div>
+            <div class="font-bold cursor-pointer my-2">Codewithharry</div>
+            <div class="font-bold cursor-pointer my-2">Jagat Sharma</div>
+          </div>
+          <div class="text-blue-700 underline mx-2 cursorpoin">Show More</div>
         </div>
       </div>
     </div>
