@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home/x</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -91,6 +92,13 @@
               <span class="material-symbols-outlined"> more </span>
               More
             </li>
+            <div class="buttondiv flex justify-center items-center">
+              <button
+                class="bg-blue-600 text-2xl font-bold py-1 px-12 cursor-pointer w-full rounded-full"
+              >
+                Post
+              </button>
+            </div>
           </ul>
         </div>
       </div>
@@ -102,14 +110,10 @@
           <div
             class="absolute w-16 h-1 rounded-full z-10 bg-blue-500 bottom-0 left-[18%]"
           ></div>
-          <div
-            class="left bg-red-400 w-1/2 flex justify-center font-bold text-lg"
-          >
+          <div class="left w-1/2 flex justify-center font-bold text-lg">
             For you
           </div>
-          <div
-            class="right bg-green-300 w-1/2 flex justify-center text-lg font-bold"
-          >
+          <div class="right w-1/2 flex justify-center text-lg font-bold">
             Following
           </div>
           <div class="setting mx-2">
@@ -119,17 +123,156 @@
         <div class="w-full h-[1px] bg-gray-700"></div>
 
         <!--what happeing input and img setion -->
-        <div class="whatishapp flex gap-4">
-          <div class="img">
-            <img src="" alt="" />
+        <div class="whatishapp flex gap-4 my-1">
+          <div class="img m-2">
+            <img
+              width="60px"
+              class="rounded-full"
+              src="https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-1/611141116_1257276016457841_8026998659813276959_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=qAfw4yxoD5cQ7kNvwHfUK6I&_nc_oc=AdlSSQPocYO0z_Lz2CnGDfxs8qL0LGj4-cGhPv1BfP7Ay9jyICYKNeFNFb3wEHwjFiI&_nc_zt=24&_nc_ht=scontent.fktm20-1.fna&_nc_gid=5mp935WkBikTHm9COscyYw&oh=00_AfpnHVhsY516W5_0Z5dq1Kqt1YPV0X3jP6ALLEhAEb0IVA&oe=6965B2E2"
+              alt=""
+            />
           </div>
- 
-          <input type="text" class="w-full bg-black text-white" placeholder="What is happening ?! ">
 
+          <div class="w-full">
+            <input
+              type="text"
+              class="w-full bg-black text-xl text-white outline-none h-10 my-4"
+              placeholder="What is happening ?! "
+            />
+
+            <div class="flex items-center text-blue-600 gap-3">
+              <span class="material-symbols-outlined"> globe_asia </span>
+              <span class="font-bold">Everyone can reply </span>
+            </div>
+            <div class="w-[90%] h-[0.1px] my-2 bg-gray-400"></div>
+            <div class="blueicons flex gap-2 text-blue-600">
+              <span class="material-symbols-outlined cursor-pointer">
+                image
+              </span>
+              <span class="material-symbols-outlined cursor-pointer">
+                gif
+              </span>
+              <span class="material-symbols-outlined cursor-pointer">
+                sentiment_satisfied
+              </span>
+              <span class="material-symbols-outlined cursor-pointer">
+                calendar_month
+              </span>
+              <span class="material-symbols-outlined cursor-pointer">
+                location_on
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div class="posts">
+          <!--post 1-->
+          <div class="post">
+            <div class="flex">
+              <div class="image m-4">
+                <img
+                  width="40px"
+                  class="rounded-full"
+                  src="https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-1/611141116_1257276016457841_8026998659813276959_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=qAfw4yxoD5cQ7kNvwHfUK6I&_nc_oc=AdlSSQPocYO0z_Lz2CnGDfxs8qL0LGj4-cGhPv1BfP7Ay9jyICYKNeFNFb3wEHwjFiI&_nc_zt=24&_nc_ht=scontent.fktm20-1.fna&_nc_gid=5mp935WkBikTHm9COscyYw&oh=00_AfpnHVhsY516W5_0Z5dq1Kqt1YPV0X3jP6ALLEhAEb0IVA&oe=6965B2E2"
+                  alt=""
+                />
+              </div>
+
+              <div class="content my-3">
+                <span
+                  class="font-bold hover:underline cursor-pointer text-white"
+                >
+                  non aesthetic things
+                </span>
+                <span class="text-gray-500">@picturesFolder 6h </span>
+                <div>legend</div>
+                <div class="postimg m-4 ml-0">
+                  <img
+                    class="rounded-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk4ZAv5J_bnkPXSFF152Q0amaLBG4c3tpWWQ&s"
+                    alt=""
+                  />
+                </div>
+                <div class="icons flex justify-between mx-3 text-gray-600">
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> chat_bubble </span>
+                    1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> repeat </span>
+                    1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> favorite </span>
+                    1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> bar_chart </span>
+                    1K
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <!--post2 -->
+          <div class="post">
+            <div class="flex">
+              <div class="image m-4">
+                <img
+                  width="40px"
+                  class="rounded-full"
+                  src="https://scontent.fktm20-1.fna.fbcdn.net/v/t39.30808-1/611141116_1257276016457841_8026998659813276959_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=qAfw4yxoD5cQ7kNvwHfUK6I&_nc_oc=AdlSSQPocYO0z_Lz2CnGDfxs8qL0LGj4-cGhPv1BfP7Ay9jyICYKNeFNFb3wEHwjFiI&_nc_zt=24&_nc_ht=scontent.fktm20-1.fna&_nc_gid=5mp935WkBikTHm9COscyYw&oh=00_AfpnHVhsY516W5_0Z5dq1Kqt1YPV0X3jP6ALLEhAEb0IVA&oe=6965B2E2"
+                  alt=""
+                />
+              </div>
+
+              <div class="content my-3">
+                <span
+                  class="font-bold hover:underline cursor-pointer text-white"
+                >
+                  non aesthetic things
+                </span>
+                <span class="text-gray-500">@picturesFolder 6h </span>
+                <div>legend</div>
+                <div class="postimg m-4 ml-0">
+                  <img
+                    class="rounded-xl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk4ZAv5J_bnkPXSFF152Q0amaLBG4c3tpWWQ&s"
+                    alt=""
+                  />
+                </div>
+                <div class="icons flex justify-between mx-3 text-gray-600">
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> chat_bubble </span>
+                    1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> repeat </span>
+                    1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> favorite </span>
+                    1K
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> bar_chart </span>
+                    1K
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>  
+          
         </div>
       </div>
 
-      <!-- Second section  -->
+      <!-- Thid  section  -->
       <div class="third w-full">
         <div class="search m-3">
           <input
