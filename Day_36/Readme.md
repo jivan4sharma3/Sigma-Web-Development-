@@ -65,17 +65,3 @@ This document summarizes the key concepts and practical knowledge I learned from
 
 ---
 
-## ✅ Overall Learning Outcome
-From these two videos, I gained:
-- Clear understanding of **web hosting fundamentals**
-- Knowledge of **different hosting types and their use cases**
-- Practical experience in **deploying a backend application**
-- Confidence in using **VPS and Linux servers**
-- Foundation skills required for **real-world full-stack development**
-
----
-
-## 🚀 Next Steps
-- Practice deploying more projects on VPS
-- Learn domain and SSL configuration
-- Explore production best practices for Node.js apps
