@@ -1,0 +1,18 @@
+.card{
+    height: 35vh;
+    width: 15vw;
+    box-shadow: 2px 2px 12px 2px #88888888;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+.card h1{
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+
+}
+.card p{
+    font-size: 18px;
+    padding: 10px;
+}

@@ -1,0 +1,32 @@
+.main {
+    background-color: rgb(231, 231, 231);
+    height: 50px;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(231, 231, 231);
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+}
+
+ul li {
+    list-style: none;
+    padding: 15px;
+    font-size: 19px;
+    cursor: pointer;
+}
