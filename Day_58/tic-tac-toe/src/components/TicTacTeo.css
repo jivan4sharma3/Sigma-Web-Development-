@@ -1,0 +1,150 @@
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0b0b28;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff8a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  text-transform: uppercase;
+  animation: glow 2s infinite alternate;
+  line-height: 1.2;
+}
+
+.title img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff416c, 0 0 20px #ff8a00;
+  }
+  to {
+    text-shadow: 0 0 25px #ff4b2b, 0 0 45px #ff8a00;
+  }
+}
+
+/* ✅ Board (supports both class names) */
+.board,
+.bored {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* ✅ If you keep row divs in HTML, make them transparent and not affect layout */
+.row1,
+.row2,
+.row3 {
+  display: contents; /* grid will handle children directly */
+}
+
+/* Boxes */
+.boxes {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  user-select: none;
+}
+
+.boxes:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: scale(1.05);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+.boxes:active {
+  transform: scale(0.98);
+}
+
+/* Images inside boxes */
+.boxes img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  pointer-events: none; /* ✅ prevents click issues on the image itself */
+}
+
+/* Reset Button */
+.reset {
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.reset:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(229, 46, 113, 0.45);
+}
+
+.reset:active {
+  transform: scale(0.98);
+  opacity: 0.95;
+}
+
+/* ✅ Responsive: smaller screens */
+@media (max-width: 420px) {
+  .title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .board,
+  .bored {
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 10px;
+  }
+
+  .boxes {
+    width: 90px;
+    height: 90px;
+  }
+
+  .boxes img {
+    width: 48px;
+    height: 48px;
+  }
+}
