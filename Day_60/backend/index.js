@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost:27017/passwordManager').then(() => {
     console.log('Error connecting to MongoDB', err)
 })
 
-// create a schema for password saving
+// create a schema for password manager
 const passwordSchema = new mongoose.Schema({
     website: String,
     username: String,
