@@ -29,5 +29,43 @@ The course focuses on building a **strong foundation in frontend and backend web
 
 ---
 
-## 📂 Repository Structure
+> Each folder represents different topics and stages covered during the course.
+
+---
+
+## 🎯 Purpose of This Repository
+
+- Track my **web development learning journey**
+- Practice **hands-on coding**
+- Build **real-world projects**
+- Strengthen **frontend & backend fundamentals**
+- Showcase my work on **GitHub**
+
+---
+
+## 🧠 What I Learned
+
+- Core concepts of **HTML, CSS, and JavaScript**
+- Building **responsive and modern websites**
+- Writing **clean and structured code**
+- Using **Git & GitHub** for version control
+- Understanding the **full web development workflow**
+
+---
+
+## 🙌 Acknowledgement
+
+Special thanks to **CodeWithHarry** for creating such an amazing and beginner-friendly web development course.
+
+---
+
+## 📬 Connect With Me
+
+- **GitHub:** https://github.com/jivan4sharma3  
+- **LinkedIn:** https://www.linkedin.com/in/jivan-sharma-3133b832b/
+
+---
+
+⭐ If you find this repository helpful, don’t forget to **star** it!
+
 
