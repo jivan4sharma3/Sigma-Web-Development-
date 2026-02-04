@@ -42,50 +42,146 @@ const Notes = (props) => {
 
     return (
         <>
-            <AddNotes  />
+            <AddNotes />
 
-            <button type="button" ref={ref} className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button
+                type="button"
+                ref={ref}
+                className="hidden px-4 py-2 text-white bg-blue-600 rounded-md"
+            >
                 Launch demo modal
             </button>
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h1 className="modal-title fs-5" id="exampleModalLabel">Edit a Note</h1>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div
+                className="fixed inset-0 z-50 hidden overflow-y-auto bg-black/50"
+                id="exampleModal"
+                tabIndex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+            >
+                <div className="flex min-h-screen items-center justify-center p-4">
+                    <div className="bg-white rounded-lg shadow-lg w-full max-w-md">
+
+                        {/* Header */}
+                        <div className="flex items-center justify-between px-4 py-3 border-b">
+                            <h1
+                                className="text-lg font-semibold text-gray-800"
+                                id="exampleModalLabel"
+                            >
+                                Edit a Note
+                            </h1>
+                            <button
+                                type="button"
+                                className="text-gray-500 hover:text-gray-700"
+                                aria-label="Close"
+                            >
+                                ✕
+                            </button>
                         </div>
-                        <div className="modal-body">
-                            <form className='my-3'>
-                                <div className="mb-3">
-                                    <label htmlFor="title" className="form-label">Title</label>
-                                    <input value={note.etitle} type="text" className="form-control" id="etitle" name='etitle' aria-describedby="emailHelp" onChange={handleONchange} minLength={5} required />
+
+                        {/* Body */}
+                        <div className="px-4 py-4">
+                            <form className="space-y-4">
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                                        Title
+                                    </label>
+                                    <input
+                                        value={note.etitle}
+                                        type="text"
+                                        id="etitle"
+                                        name="etitle"
+                                        onChange={handleONchange}
+                                        minLength={5}
+                                        required
+                                        className="w-full px-3 py-2 border rounded-md
+                                       focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
                                 </div>
-                                <div className="mb-3">
-                                    <label htmlFor="description" className="form-label">Description</label>
-                                    <input value={note.edescription} type="text" className="form-control" id="edescription" name='edescription' onChange={handleONchange} minLength={5} required />
+
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                                        Description
+                                    </label>
+                                    <input
+                                        value={note.edescription}
+                                        type="text"
+                                        id="edescription"
+                                        name="edescription"
+                                        onChange={handleONchange}
+                                        minLength={5}
+                                        required
+                                        className="w-full px-3 py-2 border rounded-md
+                                       focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
                                 </div>
-                                <div className="mb-3">
-                                    <label htmlFor="tag" className="form-label">Note Tag</label>
-                                    <input value={note.etag} type="text" className="form-control" id="etag" name='etag' onChange={handleONchange} />
+
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                                        Note Tag
+                                    </label>
+                                    <input
+                                        value={note.etag}
+                                        type="text"
+                                        id="etag"
+                                        name="etag"
+                                        onChange={handleONchange}
+                                        className="w-full px-3 py-2 border rounded-md
+                                       focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    />
                                 </div>
                             </form>
                         </div>
-                        <div className="modal-footer">
-                            <button type="button" ref={refClose} className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button disabled={note.etitle.length < 5 || note.edescription.length < 5} type="button" onClick={handleClick} className="btn btn-primary" > Update a Note </button>
+
+                        {/* Footer */}
+                        <div className="flex justify-end gap-3 px-4 py-3 border-t">
+                            <button
+                                type="button"
+                                ref={refClose}
+                                className="px-4 py-2 rounded-md bg-gray-300 hover:bg-gray-400"
+                            >
+                                Close
+                            </button>
+
+                            <button
+                                disabled={
+                                    note.etitle.length < 5 ||
+                                    note.edescription.length < 5
+                                }
+                                type="button"
+                                onClick={handleClick}
+                                className="px-4 py-2 rounded-md text-white bg-blue-600
+                               hover:bg-blue-700 disabled:bg-blue-300
+                               disabled:cursor-not-allowed"
+                            >
+                                Update a Note
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="row my-3">
-                <h2> Yours Notes</h2>
-                <div className='container my-3 mx-2'>
+
+            <div className="my-6">
+                <h2 className="text-xl font-semibold text-gray-800 mb-3">
+                    Your Notes
+                </h2>
+
+                <div className="my-3 mx-2 text-gray-500">
                     {notes.length === 0 && "No notes to display"}
                 </div>
-                {notes.map((note) => {
-                    return <Notesitems key={note._id} updateNote={updateNote} showAlert={props.showAlert} note={note} />
-                })}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {notes.map((note) => (
+                        <Notesitems
+                            key={note._id}
+                            updateNote={updateNote}
+                            showAlert={props.showAlert}
+                            note={note}
+                        />
+                    ))}
+                </div>
             </div>
+
         </>
     )
 }

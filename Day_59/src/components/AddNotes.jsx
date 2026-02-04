@@ -18,24 +18,91 @@ const AddNotes = () => {
     }
 
     return (
-        <div className="container my-3">
-            <h2>Add Yours Notes</h2>
-            <form className='my-3'>
-                <div className="mb-3">
-                    <label htmlFor="title" className="form-label">Title</label>
-                    <input type="text" className="form-control" id="title" name='title' aria-describedby="emailHelp" onChange={handleONchange} minLength={5} required value={note.title} />
+        <div className="max-w-xl mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+                Add Your Notes
+            </h2>
+
+            <form className="space-y-5">
+                {/* Title */}
+                <div>
+                    <label
+                        htmlFor="title"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                        Title
+                    </label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        value={note.title}
+                        onChange={handleONchange}
+                        minLength={5}
+                        required
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md
+                           focus:outline-none focus:ring-2 focus:ring-blue-500
+                           focus:border-blue-500"
+                    />
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="description" className="form-label">Description</label>
-                    <input type="text" className="form-control" id="description" name='description' onChange={handleONchange} minLength={5} required value={note.description} />
+
+                {/* Description */}
+                <div>
+                    <label
+                        htmlFor="description"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                        Description
+                    </label>
+                    <input
+                        type="text"
+                        id="description"
+                        name="description"
+                        value={note.description}
+                        onChange={handleONchange}
+                        minLength={5}
+                        required
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md
+                           focus:outline-none focus:ring-2 focus:ring-blue-500
+                           focus:border-blue-500"
+                    />
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="tag" className="form-label">Note Tag</label>
-                    <input type="text" className="form-control" id="tag" name='tag' onChange={handleONchange} value={note.tag} />
+
+                {/* Tag */}
+                <div>
+                    <label
+                        htmlFor="tag"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                        Note Tag
+                    </label>
+                    <input
+                        type="text"
+                        id="tag"
+                        name="tag"
+                        value={note.tag}
+                        onChange={handleONchange}
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md
+                           focus:outline-none focus:ring-2 focus:ring-blue-500
+                           focus:border-blue-500"
+                    />
                 </div>
-                <button disabled={note.title.length < 5 || note.description.length < 5} type="submit" className="btn btn-primary" onClick={handleClick}>Add a Note</button>
+
+                {/* Button */}
+                <button
+                    type="submit"
+                    onClick={handleClick}
+                    disabled={note.title.length < 5 || note.description.length < 5}
+                    className="w-full py-2 px-4 rounded-md font-medium text-white
+                       bg-blue-600 hover:bg-blue-700
+                       disabled:bg-blue-300 disabled:cursor-not-allowed
+                       transition duration-200"
+                >
+                    Add a Note
+                </button>
             </form>
         </div>
+
     )
 }
 
