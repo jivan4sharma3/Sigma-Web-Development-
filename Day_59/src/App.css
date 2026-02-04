@@ -1,0 +1,26 @@
+/* Max width for navbar container */
+.custom-container {
+    max-width: 1200px; /* You can adjust it (like 1100px, 1300px) */
+    margin: 0 auto;
+}
+
+/* Custom navbar height */
+.custom-navbar {
+    height: 70px;
+}
+
+/* Logo font size */
+.custom-logo {
+    font-size: 1.4rem; /* Bigger logo text */
+    font-weight: bold;
+}
+
+/* Nav items font size */
+.custom-nav-link {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.login-form{
+      max-width: 1200px;
+}
